@@ -6,3 +6,4 @@ print("Síť", network.network_address)
 print("Broadcast:", network.broadcast_address) 
 print("Maska:", network.netmask)
 print("Počet hostů:", network.num_addresses)
+fdsfsf
