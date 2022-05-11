@@ -30,3 +30,4 @@ cikan.getborn()
 cikan.getweapons()
 cikan.addweapon("tatarka")
 cikan.getweapons()
+aaa
