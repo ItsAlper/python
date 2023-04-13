@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="jebka.py"></script>
+    <title>Seznam piv</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th, td {
+        text-align: left;
+        padding: 8px;
+      }
+      th {
+        background-color: #ffc400;
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      @media screen and (max-width: 600px) {
+        table, thead, tbody, th, td, tr {
+          display: block;
+        }
+
+        thead tr {
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+        }
+        tr {
+          border: 1px solid #ccc;
+        }
+        td {
+          position: relative;
+          padding-left: 50%;
+        }
+        td:before {
+          position: absolute;
+          top: 6px;
+          left: 6px;
+          width: 45%;
+          padding-right: 10px;
+          white-space: nowrap;
+        }
+
+        td:nth-of-type(1):before {
+          content: "Značka:";
+        }
+        td:nth-of-type(2):before {
+          content: "Název:";
+        }
+        td:nth-of-type(3):before {
+          content: "Alkohol:";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Seznam piv</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Značka</th>
+          <th>Název</th>
+          <th>Alkohol</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </body>
+</html>
