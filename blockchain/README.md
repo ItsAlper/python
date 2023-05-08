@@ -44,4 +44,4 @@ https://www.youtube.com/watch?v=alNU9AVWkQk
 
 https://www.investopedia.com/terms/p/proof-work.asp
 
-Ještě bych se rád omluvil za pozdní odevzdání úkolu, časově jsem to nestíhal. Má chyba.
+Ještě bych se rád omluvil za pozdní odevzdání úkolu, časově jsem to nestíhal.
