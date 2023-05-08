@@ -4,12 +4,18 @@ Projekt obsahuje dvě třídy a to Block a Chain.
 
 ## Třída Block
 index - index bloku v řetězci bloků
+
 timestamp - datum a čas vytvoření bloku
+
 data - data, která jsou ukládána do bloku
+
 previous_hash - hash hodnota předchozího bloku v řetězci bloků
+
 nonce - hodnota nonce pro ověření nového bloku
+
 hash - hash hodnota aktuálního bloku
-Třída Block obsahuje metodu calc_hash(), která vypočítá hash hodnotu aktuálního bloku na základě jeho atributů. Tato metoda se používá pro ověření nových bloků.
+
+metoda -  calc_hash() - vypočítává hash hodnotu aktuálního bloku na základě jeho atributů.
 
 ## Třída Chain
 blocks - seznam bloků v řetězci bloků
