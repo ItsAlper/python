@@ -22,6 +22,9 @@ get_last_block(): vrátí poslední blok v řetězci
 
 is_valid(): ověří platnost celého řetězce
 
+## UML Class diagram
+![UML_blch](https://user-images.githubusercontent.com/75456808/236910023-9f7231f2-6bfc-4081-9e5d-a160f9596f48.png)
+
 ### Videa, která byla učebně nápomocná k dokonání úkolu
 https://www.youtube.com/watch?v=pYasYyjByKI
 
