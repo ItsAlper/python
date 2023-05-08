@@ -3,32 +3,24 @@ Kód bsahuje implementaci jednoduchého úložiště založeného na technologii
 Projekt obsahuje dvě třídy a to Block a Chain.
 
 ## Třída Block
-index - index bloku v řetězci bloků
+timestamp: časové razítko bloku
 
-timestamp - datum a čas vytvoření bloku
+data: data uložená v bloku
 
-data - data, která jsou ukládána do bloku
+previous_block: hash předchozího bloku v řetězci
 
-previous_hash - hash hodnota předchozího bloku v řetězci bloků
+nonce: číslo, které se používá k výpočtu hash hodnoty bloku
 
-nonce - hodnota nonce pro ověření nového bloku
-
-hash - hash hodnota aktuálního bloku
-
-metoda -  calc_hash() - vypočítává hash hodnotu aktuálního bloku na základě jeho atributů
+hash: hash hodnota bloku
 
 ## Třída Chain
-blocks - seznam bloků v řetězci bloků
+create_genesis_block(): vytvoří a vrátí první blok v řetězci
 
-difficulty - obtížnost vytváření nových bloků
+add_block(data): přidá nový blok do řetězce s danými daty
 
-metoda create_genesis_block() - vytváří první blok v řetězci bloků
+get_last_block(): vrátí poslední blok v řetězci
 
-metodu add_block(block) - přidává nový blok do řetězce bloků
-
-metoda get_last_block() - vrátí poslední blok v řetězci bloků
-
-metoda is_valid() - ověřuje platnost řetězce blok.
+is_valid(): ověří platnost celého řetězce
 
 
 ### Videa, která byla učebně nápomocná k dokonání úkolu
