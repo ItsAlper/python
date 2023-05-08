@@ -7,9 +7,9 @@ class Block:
         self.data = data
         self.previous_block = previous_block
         self.nonce = 0
-        self.hash = self.calc_hash()
+        self.hash = self.calculate_hash()
 
-    def calc_hash(self):
+    def calculate_hash(self):
         sha = hashlib.sha256()
         sha.update(str(self.timestamp).encode('utf-8') +
                    str(self.data).encode('utf-8') +
@@ -37,7 +37,7 @@ class Chain:
         for i in range(1, len(self.chain)):
             current_block = self.chain[i]
             previous_block = self.chain[i - 1]
-            if current_block.hash != current_block.calc_hash():
+            if current_block.hash != current_block.calculate_hash():
                 return False
             if current_block.previous_block != previous_block.hash:
                 return False
