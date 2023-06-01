@@ -6,11 +6,11 @@ import numpy as np
 
 # Typy emailů
 emails = [
-    "example@example.com",
-    "invalid.email",
-    "another@example.com",
     "notvalid@",
-    "test123@test.com"
+    "karel@test.com"
+    "tomas@something.com",
+    "invalid.email",
+    "vitek@word.com",
 ]
 
 features = np.array([len(email) for email in emails])
