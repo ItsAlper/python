@@ -20,7 +20,7 @@ features = (features - features.min()) / (features.max() - features.min())
 # V této části vytvářím model
 model = Sequential()
 model.add(Dense(1, activation='sigmoid', input_shape=(1,)))
-# Kompilace a trénoví modelu
+# Kompilace a trénování modelu
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 model.fit(features, labels, epochs=50)
 
@@ -36,7 +36,7 @@ new_features = np.array([len(email) for email in new_emails])
 new_features = (new_features - features.min()) / (features.max() - features.min())
 predictions = model.predict(new_features)
 
-# Výsledek
+# Výsledky (Results)
 for email, prediction in zip(new_emails, predictions):
     is_valid = 'platná' if prediction >= 0.5 else 'neplatná'
     print(f"Email: {email} je {is_valid}")
