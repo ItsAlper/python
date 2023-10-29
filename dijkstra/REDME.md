@@ -11,3 +11,4 @@ Po zpracování všech sousedů vybraného uzlu jej odstraňujeme ze seznamu nez
 Cílem je získat nejkratší vzdálenosti od počátečního uzlu ke všem ostatním uzlům v grafu.
 
 ## VÝSTUP
+![dij](https://github.com/ItsAlper/python/assets/75456808/f2aa6ccb-3ed0-4948-b6df-b8fa4e534b5c)
